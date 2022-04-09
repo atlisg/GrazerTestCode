@@ -11,6 +11,8 @@
 		E00705FD2800FAC9006F92CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00705FC2800FAC9006F92CE /* ContentView.swift */; };
 		E00705FF2800FACA006F92CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00705FE2800FACA006F92CE /* Assets.xcassets */; };
 		E00706022800FACA006F92CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00706012800FACA006F92CE /* Preview Assets.xcassets */; };
+		E007060928010445006F92CE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E007060828010445006F92CE /* Data.swift */; };
+		E007060B28010510006F92CE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = E007060A28010510006F92CE /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E00705FC2800FAC9006F92CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E00705FE2800FACA006F92CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E00706012800FACA006F92CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E007060828010445006F92CE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		E007060A28010510006F92CE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 			children = (
 				E00705FA2800FAC9006F92CE /* GrazerTestCodeApp.swift */,
 				E00705FC2800FAC9006F92CE /* ContentView.swift */,
+				E007060828010445006F92CE /* Data.swift */,
 				E00705FE2800FACA006F92CE /* Assets.xcassets */,
 				E00706002800FACA006F92CE /* Preview Content */,
+				E007060A28010510006F92CE /* Models.swift */,
 			);
 			path = GrazerTestCode;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E00705FD2800FAC9006F92CE /* ContentView.swift in Sources */,
+				E007060928010445006F92CE /* Data.swift in Sources */,
 				E00705FB2800FAC9006F92CE /* GrazerTestCodeApp.swift in Sources */,
+				E007060B28010510006F92CE /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
