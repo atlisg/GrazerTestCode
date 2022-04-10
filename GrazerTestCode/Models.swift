@@ -24,7 +24,7 @@ struct LoginResponse: Decodable {
 struct User: Decodable, Identifiable {
     let id = UUID()
     let name: String!
-    let date_of_birth: Int!
+    let date_of_birth: Date!
     let profile_image: String!
 }
 
