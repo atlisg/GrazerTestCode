@@ -19,19 +19,9 @@ class Api {
         
         let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
             guard let data = data else { return }
-            
-            do {
-                let encoded = String(data: data, encoding: .utf8)!
-                print(encoded)
-                let jsonData = encoded.data(using: .utf8)
-                let loginData: LoginResponse = try! JSONDecoder().decode(LoginResponse.self, from: jsonData!)
+            let loginData: LoginResponse = try! JSONDecoder().decode(LoginResponse.self, from: data)
                 
-                completionHandler(loginData)
-            }
-            catch {
-                let error = error
-                print(error.localizedDescription)
-            }
+            completionHandler(loginData)
         })
         
         task.resume()
@@ -48,19 +38,9 @@ class Api {
             
             let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
                 guard let data = data else { return }
-                
-                do {
-                    let encoded = String(data: data, encoding: .utf8)!
-                    print(encoded)
-                    let jsonData = encoded.data(using: .utf8)
-                    let userData: UserResponse = try! JSONDecoder().decode(UserResponse.self, from: jsonData!)
+                let userData: UserResponse = try! JSONDecoder().decode(UserResponse.self, from: data)
                     
-                    completionHandler(userData)
-                }
-                catch {
-                    let error = error
-                    print(error.localizedDescription)
-                }
+                completionHandler(userData)
             })
             
             task.resume()
